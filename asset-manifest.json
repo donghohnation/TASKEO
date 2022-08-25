@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TASKEO/static/css/main.79349121.css",
+    "main.js": "/TASKEO/static/js/main.33387af8.js",
+    "static/js/787.51caa0a5.chunk.js": "/TASKEO/static/js/787.51caa0a5.chunk.js",
+    "index.html": "/TASKEO/index.html",
+    "main.79349121.css.map": "/TASKEO/static/css/main.79349121.css.map",
+    "main.33387af8.js.map": "/TASKEO/static/js/main.33387af8.js.map",
+    "787.51caa0a5.chunk.js.map": "/TASKEO/static/js/787.51caa0a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79349121.css",
+    "static/js/main.33387af8.js"
+  ]
+}
