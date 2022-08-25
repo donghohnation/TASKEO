@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+* {
+	/* background-color: rgb(23, 42, 45); */
+	background-color: rgb(15, 33, 36);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.header {
+	margin: 66px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#title {
+	font-family: 'Bungee Shade', cursive;
+	color: white;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 97px;
+}
+
+#subtitle {
+	color: white;
+	margin-top: 7px;
+	padding-left: 29px;
+	font-size: 20.5px;
+	font-weight: 300;
+	letter-spacing: 17px;
+}
+
+
+.instructions{
+	color: rgb(89, 124, 142);
+	line-height: 22px;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 22px;
+}
+
+
+
+
+
+.input-div {
+	/* filter: drop-shadow(0px 11px 22px #050c126f); */
+	width: 100%;
+	border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	-ms-border-radius: 9px;
+	-o-border-radius: 9px;
+}
+
+
+
+
+.input-todo-text {
+	border: none;
+	color: white;
+	background-color: #151f25;
+	padding: 14px 22px;
+	padding-left: 29px;
+	width: 80%;
+	border-top: 1px solid rgba(216, 255, 60, 0.466);
+	border-left: 1px solid rgba(216, 255, 60, 0.466);
+	border-bottom: 1px solid rgba(216, 255, 60, 0.466);
+	/*border: 1px solid rgba(216, 255, 60, 0.466);
+	*/font-size: 25px;
+	font-family: 'Titillium Web', sans-serif;
+	border-radius: 33px 0px 0px 33px;
+	-webkit-border-radius: 33px 0px 0px 33px;
+	-moz-border-radius: 33px 0px 0px 33px;
+	-ms-border-radius: 33px 0px 0px 33px;
+	-o-border-radius: 33px 0px 0px 33px;
+	transition: all ease-in-out 0.2s;
+}
+
+.input-todo-text:hover {
+	background-color: rgb(41, 6, 28);
+	color: rgb(190, 236, 141);
+	transition: all ease-in-out 0.2s;
+	border-color: #0841b2;
+	-webkit-transition: all ease-in-out 0.2s;
+	-moz-transition: all ease-in-out 0.2s;
+	-ms-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+}
+
+.input-todo-text:focus {
+	background-color: rgb(219, 235, 238);
+	color: #160a02;
+	font-weight: 600;
+	transition: all ease-in-out 0.1s;
+	-webkit-transition: all ease-in-out 0.1s;
+	-moz-transition: all ease-in-out 0.1s;
+	-ms-transition: all ease-in-out 0.1s;
+	-o-transition: all ease-in-out 0.1s;
+}
+
+
+
+
+.add-todo-button {
+	border: none;
+	color: white;
+	background-color: #345165;
+	padding: 14px 0px;
+	padding-right: 7px;
+	width: 20%;
+	border-top: 1px solid rgba(216, 255, 60, 0.466);
+	border-right: 1px solid rgba(216, 255, 60, 0.466);
+	border-bottom: 1px solid rgba(216, 255, 60, 0.466);
+	/*border: 1px solid rgba(216, 255, 60, 0.33);
+	*/font-size: 25px;
+	font-weight: 300;
+	font-family: 'Titillium Web', sans-serif;
+	border-radius: 0px 33px 33px 0px;
+	-webkit-border-radius: 0px 33px 33px 0px;
+	-moz-border-radius: 0px 33px 33px 0px;
+	-ms-border-radius: 0px 33px 33px 0px;
+	-o-border-radius: 0px 33px 33px 0px;
+	transition: all ease-in-out 0.2s;
+}
+
+.add-todo-button:hover {
+	background-color: rgb(124, 232, 234);
+	color: rgb(213, 19, 87);
+	font-weight: 600;
+	border-color: rgb(245, 217, 225);
+	cursor: pointer;
+	transition: all ease-in-out 0.2s;
+}
+
+.add-todo-button:active {
+	background-color: rgb(3, 17, 14);
+	color: rgba(35, 245, 221, 0.396);
+	font-weight: 100;
+	border-color: rgba(7, 229, 254, 0.168);
+	cursor: pointer;
+	transition: all ease-in-out 0.1s;
+	-webkit-transition: all ease-in-out 0.1s;
+	-moz-transition: all ease-in-out 0.1s;
+	-ms-transition: all ease-in-out 0.1s;
+	-o-transition: all ease-in-out 0.1s;
+}
+
+
+
+
+
+
+
+.display-todo-container {
+	margin-top: 66px;
+	margin-bottom: 99px;
+	text-align: left;
+}
+
+
+.todo-item-text {
+	/*background-color: rgb(9, 23, 27);
+	*/background-color: rgb(38, 65, 70);
+	color: rgb(211, 250, 255);
+	margin: 12px 0px;
+	padding: 12px 22px;
+	font-size: 25px;
+	font-weight: 400;
+	border: 1px solid rgba(84, 126, 151, 0.737);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	filter: drop-shadow(0px 4px 7px #050b0caf);
+	-webkit-filter: drop-shadow(0px 4px 7px #05090ced);
+	transition: all ease-in-out 0.1s;
+}
+
+.todo-item-text:hover {
+	cursor: pointer;
+	border: 1px solid rgba(187, 209, 223, 0.354);
+	background-color: rgb(56, 84, 87);
+	color: rgba(187, 226, 232, 0.491);
+	filter: drop-shadow(0px 3px 2px #05090c);
+	-webkit-filter: drop-shadow(0px 3px 2px #05090c);
 }
